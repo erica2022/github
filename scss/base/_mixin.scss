@@ -1,0 +1,17 @@
+/* Configuro tamaño de imagen y estilo de borde*/
+@mixin imagen($tamanio, $border) {
+    width: $tamanio;
+    border-radius: $border;
+}
+
+/*Configuro los textos de acuerdo al color y tamaño*/
+@mixin contenido_texto ($color,$tamanio){
+    color: $color;
+    font-size: $tamanio;
+} 
+
+@mixin fondo_texto ($color,$border,$margen){
+    background-color: $color;
+    border-radius: $border;
+    margin: $margen;
+}

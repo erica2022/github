@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/*Aca agregue extends y clases que se usan en varios lados*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.contenedor_mapa, .contenedor_img_txt, header ul, .E_contactos_linea, .E_container_contacto, .E_container_redes, .E_container_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Configuro tamaño de imagen y estilo de borde*/
+/*Configuro los textos de acuerdo al color y tamaño*/
+/* Segun el tipo de texto qe sea tienen valores distintos*/
+/*Colores que uso en el curso*/
+.fondo_pagina {
+  background-image: url("../imagenes/fondo_main.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.e_container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+.espacio_inicio {
+  margin-top: 160px;
+}
+
+.titulo {
+  color: #0e8f5f;
+  font-family: "rufus-bold";
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*Tipografias*/
+@font-face {
+  font-family: "rufus";
+  src: url("../../fuentes/FSRufus.otf") format("otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rufus-bold";
+  src: url("../../fuentes/FSRufus-Bold.otf") format("otf");
+  font-display: swap;
+}
+/*Colores que uso en el curso*/
+footer {
+  background-color: #373837;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+footer a {
+  margin-left: 10px;
+}
+
+/*Acomodo los iconos de las redes en linea*/
+.E_container_footer {
+  justify-content: space-around;
+}
+
+.E_container_redes {
+  width: 30%;
+  justify-content: left;
+}
+
+/* Acomodo los contactos del footer*/
+.E_container_contacto {
+  width: 70%;
+  justify-content: right;
+}
+
+.E_contactos_linea {
+  color: #d7dad6;
+  font-family: "Roboto", sans-serif;
+  margin: 0px 20px;
+}
+
+/*Colores que uso en el curso*/
+header {
+  background-color: #0e8f5f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px;
+  z-index: 6;
+}
+header ul {
+  justify-content: space-around;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  color: #d2d6d296;
+  font-size: 22px;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+header ul li a:hover {
+  color: #f7a25c;
+}
+
+.E_logo {
+  margin: 10px 20px;
+  transition: all 0.5s;
+}
+.E_logo:hover {
+  transform: scale(0.8);
+  opacity: 80%;
+}
+
+/*Colores que uso en el curso*/
+.contenedor_img_txt {
+  margin: 30px auto;
+  justify-content: center;
+}
+
+.E_texto_ppal {
+  color: #018655;
+  font-size: 21px;
+  font-family: "rufus";
+  padding: 20px 20px;
+  background-color: #d2d6d296;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.E_texto_secundario {
+  color: #797878;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 17px;
+}
+
+/*Imagenes*/
+.E_imagen {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.E_imagen_chica {
+  width: 60%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.E_fondo {
+  background-color: rgba(82, 80, 80, 0.219);
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.E_carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 12px;
+  left: 15%;
+  padding: 12px;
+  color: #b4d1c0;
+  text-align: center;
+}
+
+.mapa {
+  border-radius: 50px;
+  margin: 50px auto;
+}
+
+.e_card {
+  background-color: rgba(223, 219, 219, 0.486);
+  border-radius: none;
+  margin: 5px auto;
+  border-radius: 10px;
+  padding: 10px 5px;
+}
+
+.e_card img {
+  width: 50%;
+}
+
+.e_titulo_card {
+  color: #f7a25c;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  margin: 5px auto;
+  font-weight: bold;
+}
+
+.e_subtitulo_card {
+  color: #7a7777;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  margin: 5px auto;
+  font-weight: bold;
+}
+
+.e_texto {
+  color: #373837;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 20px;
+}
+
+.e_texto ul {
+  list-style-type: circle;
+}
+
+/*# sourceMappingURL=style.css.map */

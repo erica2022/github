@@ -1,0 +1,46 @@
+@import'../base/variables';
+
+
+.contenedor_img_txt{
+    margin: 30px auto;
+    @extend %contenedores_flex;
+    justify-content: center;
+}
+
+.E_texto_ppal{
+    @include contenido_texto(map-get($textoPrincipal,colorLetra),map-get($textoPrincipal,size));
+    font-family: 'rufus';
+    padding: 20px 20px;
+    @include fondo_texto(nth($colores, 6),10px, map-get($textoPrincipal,margenes));
+}
+
+.E_texto_secundario{
+    @include contenido_texto(map-get($textoSecundario,colorLetra),map-get($textoSecundario,size));
+    font-family: 'Roboto', sans-serif;
+    margin: map-get($textoSecundario,margenes);
+}
+
+/*Imagenes*/
+.E_imagen{
+    @include imagen(100%,10px);
+}
+
+.E_imagen_chica{
+    @include imagen(60%,10px);
+    margin-top: 20px;
+}
+
+
+.E_fondo{
+    @include fondo_texto(rgba(82, 80, 80, 0.219),30px,20px);
+}
+
+.E_carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 12px;
+    left: 15%;
+    padding: 12px;
+    color: rgb(180, 209, 192);
+    text-align: center;
+}

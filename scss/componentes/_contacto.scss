@@ -1,0 +1,8 @@
+.contenedor_mapa{
+    @extend %contenedores_flex;
+}
+
+.mapa{
+    border-radius: 50px;
+    margin: 50px auto;
+}

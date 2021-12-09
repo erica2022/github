@@ -1,0 +1,33 @@
+.e_card{
+    @include fondo_texto(rgba(223, 219, 219, 0.486),none , 5px auto);
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.e_card img{
+    width: 50%;
+}
+
+.e_titulo_card{
+    @include contenido_texto(nth($colores, 4), 19px);
+    font-family: 'Roboto', sans-serif;
+    margin: 5px auto;
+    font-weight: bold;
+}
+
+.e_subtitulo_card{
+    @include contenido_texto(nth($colores, 8),17px);
+    font-family: 'Roboto', sans-serif;
+    margin: 5px auto;
+    font-weight: bold;
+}
+
+.e_texto{
+    @include contenido_texto(nth($colores, 5),17px);
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20px;
+}
+
+.e_texto ul {
+    list-style-type: circle;
+}

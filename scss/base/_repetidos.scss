@@ -1,0 +1,27 @@
+@import './variables';
+
+.fondo_pagina{
+    background-image: url('../imagenes/fondo_main.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.e_container{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+.espacio_inicio{
+    margin-top: 160px;
+}
+
+.titulo{
+    color: nth($colores, 1);
+    font-family: 'rufus-bold';
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+}
